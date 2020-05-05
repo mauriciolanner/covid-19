@@ -14,3 +14,8 @@ body {
 .card h2{
     color: #1F77B4;
 }
+.form-control {
+    color: #9bb8b4;
+    background-color: #000f16;
+    border: 1px solid #0a4159;
+}

@@ -20,6 +20,21 @@
 <body>
     <div class="container">
         <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Selecione um país</h3>
+                <select id="select" class="form-control" name="teste" onchange="javascript:atualizaDados(this);">
+                    <option value="">selecione um país</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Paraguai">Paraguai</option>
+                    <option value="Uruguai">Uruguai</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Bolívia">Bolívia</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm-12 text-center">
                 <h1 id="loader">Dados Covid-19</h1>
             </div>
@@ -35,7 +50,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 card">
+            <div class="col-md-12 card text-center">
+                Curva de casos
                 <canvas id="myChart" width="1600" height="900"></canvas>
             </div>
             <div class="col-md-12 text-center">Design Lanner - Fonte: <a href="https://portal.fiocruz.br/">FioCruz</a>
