@@ -1,0 +1,16 @@
+/*/css por lanner /*/
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+body {
+    background-color: #000F16;
+    color: #9BB8B4;
+    font-family: 'Jost', sans-serif;
+}
+.card{
+    background-color: rgb(0, 34, 49);
+    border-radius: 10px;
+    border: 5px solid rgb(0, 15, 22);
+}
+.card h2{
+    color: #1F77B4;
+}
