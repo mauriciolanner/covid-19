@@ -14,15 +14,20 @@ function atualizaDados(country) {
             var tempo = msg.detalhes_por_dia;
             var datas = [];
             var mortos = [];
+            var casos = [];
             function preencheData(index) {
                 datas.push(index.date);
             }
             function preencheMortos(index) {
                 mortos.push(index.new_deaths);
             }
+            function preencheCasos(index) {
+                casos.push(index.new_cases);
+            }
 
             tempo.forEach(preencheData);
             tempo.forEach(preencheMortos);
+            tempo.forEach(preencheCasos);
 
             var ctx = document.getElementById("myChart");
             var myChart = new Chart(ctx, {
@@ -34,6 +39,12 @@ function atualizaDados(country) {
                         {
                             data: mortos,
                             label: "Mortos",
+                            borderColor: "#FF6347",
+                            fill: false
+                        },
+                        {
+                            data: casos,
+                            label: "Novos Casos",
                             borderColor: "#3e95cd",
                             fill: false
                         }
