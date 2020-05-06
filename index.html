@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>COVID - Dados</title>
+    <title>COVID - Dados America Latina</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -19,6 +19,29 @@
 
 <body>
     <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1 id="loader">Dados Covid-19 - America Latina</h1>
+            </div>
+        </div>
+        <div class="row" id="cartoes">
+        </div>
+        <div class="row">
+            <!--div class="col-md-6 card text-center">
+                <canvas id="bar-chart" width="800" height="450"></canvas>
+            </div-->
+            <div class="col-md-12 card text-center">
+                Curva de mortes por país
+                <canvas id="curvaMorte" width="1600" height="900"></canvas>
+            </div>
+            <div class="col-md-12 text-center">Design Lanner version 1.2 - Fonte: <a
+                    href="https://portal.fiocruz.br/">FioCruz</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- versão para comparativos antisgo -->
+    <!--div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3>Selecione um país</h3>
@@ -55,10 +78,11 @@
                 Curva de casos
                 <canvas id="myChart" width="1600" height="900"></canvas>
             </div>
-            <div class="col-md-12 text-center">Design Lanner - Fonte: <a href="https://portal.fiocruz.br/">FioCruz</a>
+            <div class="col-md-12 text-center">Design Lanner version 1.2 - Fonte: <a
+                    href="https://portal.fiocruz.br/">FioCruz</a>
             </div>
         </div>
-    </div>
+    </div-->
 
 </body>
 
